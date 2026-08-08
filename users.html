@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisateurs — Admin OussHabs</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">OussHabs</div>
+            <div class="admin-logo-sub">Administration</div>
+            <nav class="admin-nav">
+                <a href="dashboard.html"><span class="dot"></span> Tableau de bord</a>
+                <a href="stories.html"><span class="dot"></span> Histoires</a>
+                <a href="users.html"><span class="dot"></span> Utilisateurs</a>
+                <a href="messages.html"><span class="dot"></span> Messages</a>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="../index.html" class="admin-view-site">← Voir le site</a>
+                <button class="admin-logout" data-admin-logout>Déconnexion</button>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <div class="admin-topbar">
+                <div>
+                    <h1>Utilisateurs</h1>
+                    <p>Gère les comptes inscrits sur le site.</p>
+                </div>
+            </div>
+
+            <div class="admin-panel">
+                <div class="admin-panel-head">
+                    <h2>Ajouter un utilisateur</h2>
+                </div>
+                <form data-add-user-form>
+                    <div class="admin-form-grid">
+                        <div class="field">
+                            <label for="u-prenom">Prénom</label>
+                            <input type="text" id="u-prenom" placeholder="Prénom" required>
+                        </div>
+                        <div class="field">
+                            <label for="u-nom">Nom</label>
+                            <input type="text" id="u-nom" placeholder="Nom">
+                        </div>
+                        <div class="field full">
+                            <label for="u-email">Adresse e-mail</label>
+                            <input type="email" id="u-email" placeholder="email@exemple.com" required>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="form-submit">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="admin-panel">
+                <div class="admin-panel-head">
+                    <h2>Tous les utilisateurs</h2>
+                    <input type="text" class="admin-search" placeholder="Rechercher..." data-user-search>
+                </div>
+                <div class="admin-table-wrap">
+                    <table class="admin-table">
+                        <thead>
+                            <tr><th>Nom</th><th>E-mail</th><th>Inscrit le</th><th>Statut</th><th>Actions</th></tr>
+                        </thead>
+                        <tbody data-users-body></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../db.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

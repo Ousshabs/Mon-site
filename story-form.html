@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle histoire — Admin OussHabs</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">OussHabs</div>
+            <div class="admin-logo-sub">Administration</div>
+            <nav class="admin-nav">
+                <a href="dashboard.html"><span class="dot"></span> Tableau de bord</a>
+                <a href="stories.html" class="active"><span class="dot"></span> Histoires</a>
+                <a href="users.html"><span class="dot"></span> Utilisateurs</a>
+                <a href="messages.html"><span class="dot"></span> Messages</a>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="../index.html" class="admin-view-site">← Voir le site</a>
+                <button class="admin-logout" data-admin-logout>Déconnexion</button>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <div class="admin-topbar">
+                <div>
+                    <h1>Nouvelle histoire</h1>
+                    <p>Remplis les champs ci-dessous pour publier ou modifier une histoire.</p>
+                </div>
+            </div>
+
+            <div class="admin-panel">
+                <form data-story-form>
+                    <div class="admin-form-grid">
+                        <div class="field">
+                            <label for="s-title">Titre</label>
+                            <input type="text" id="s-title" placeholder="Le Sentier des Brumes" required>
+                        </div>
+                        <div class="field">
+                            <label for="s-category">Catégorie</label>
+                            <input type="text" id="s-category" placeholder="Aventure, Mystère, Romance..." required>
+                        </div>
+                        <div class="field">
+                            <label for="s-author">Auteur</label>
+                            <input type="text" id="s-author" placeholder="OussHabs">
+                        </div>
+                        <div class="field">
+                            <label for="s-readtime">Temps de lecture</label>
+                            <input type="text" id="s-readtime" placeholder="7 min">
+                        </div>
+                        <div class="field full">
+                            <label for="s-excerpt">Extrait (affiché sur les cartes)</label>
+                            <textarea id="s-excerpt" placeholder="Une ou deux phrases qui donnent envie de lire la suite..." required></textarea>
+                        </div>
+                        <div class="field full">
+                            <label for="s-content">Texte complet</label>
+                            <textarea id="s-content" class="content-area" placeholder="Écris ou colle le texte de l'histoire ici. Sépare chaque paragraphe par une ligne vide." required></textarea>
+                        </div>
+                        <p class="field-hint full">Astuce : laisse une ligne vide entre chaque paragraphe — c'est ce qui sépare les paragraphes sur la page de lecture.</p>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="form-submit">Publier l'histoire</button>
+                        <a href="stories.html"><button type="button" class="btn-outline">Annuler</button></a>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="../db.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

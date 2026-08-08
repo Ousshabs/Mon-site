@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord — Admin OussHabs</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">OussHabs</div>
+            <div class="admin-logo-sub">Administration</div>
+            <nav class="admin-nav">
+                <a href="dashboard.html"><span class="dot"></span> Tableau de bord</a>
+                <a href="stories.html"><span class="dot"></span> Histoires</a>
+                <a href="users.html"><span class="dot"></span> Utilisateurs</a>
+                <a href="messages.html"><span class="dot"></span> Messages</a>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="../index.html" class="admin-view-site">← Voir le site</a>
+                <button class="admin-logout" data-admin-logout>Déconnexion</button>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <div class="admin-topbar">
+                <div>
+                    <h1>Tableau de bord</h1>
+                    <p>Vue d'ensemble de l'activité du site.</p>
+                </div>
+            </div>
+
+            <div class="stat-grid" data-stat-grid></div>
+
+            <div class="admin-panel">
+                <div class="admin-panel-head">
+                    <h2>Histoires les plus lues</h2>
+                </div>
+                <div class="admin-table-wrap">
+                    <table class="admin-table">
+                        <thead>
+                            <tr><th>#</th><th>Titre</th><th>Catégorie</th><th>Vues</th></tr>
+                        </thead>
+                        <tbody data-top-stories></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admin-panel">
+                <div class="admin-panel-head">
+                    <h2>Répartition par catégorie</h2>
+                </div>
+                <div class="admin-table-wrap">
+                    <table class="admin-table">
+                        <thead>
+                            <tr><th>Catégorie</th><th>Nombre d'histoires</th></tr>
+                        </thead>
+                        <tbody data-category-breakdown></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../db.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
