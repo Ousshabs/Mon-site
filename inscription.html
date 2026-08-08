@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire — Chroniques d'OussHabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>C</span>hroniques d'<span>O</span>uss<span>H</span>abs</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="qui-sommes-nous.html">Qui nous sommes ?</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="contact.html"><button class="btn">Contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-wrap">
+            <div class="form-card">
+                <span class="eyebrow">Rejoignez-nous</span>
+                <h1>Créer un compte</h1>
+                <p class="sub">Sauvegardez vos histoires favorites et suivez vos auteurs préférés.</p>
+
+                <form data-fake-submit="Inscription simulée — aucun compte réel n'est créé pour l'instant.">
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="field">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email2">Adresse e-mail</label>
+                        <input type="email" id="email2" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="password2">Mot de passe</label>
+                        <input type="password" id="password2" placeholder="8 caractères minimum" required>
+                    </div>
+                    <label class="form-check">
+                        <input type="checkbox" required> J'accepte les conditions d'utilisation
+                    </label>
+                    <button type="submit" class="form-submit">Créer mon compte</button>
+                </form>
+
+                <p class="form-alt">Déjà inscrit ? <a href="connexion.html">Se connecter</a></p>
+                <p class="form-note">Formulaire de démonstration — aucune donnée n'est enregistrée.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">© 2026 Chroniques d'OussHabs. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

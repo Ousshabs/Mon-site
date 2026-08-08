@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chroniques d'OussHabs — Lire, s'évader, revenir changé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>C</span>hroniques d'<span>O</span>uss<span>H</span>abs</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="qui-sommes-nous.html">Qui nous sommes ?</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="contact.html"><button class="btn">Contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <h4>Bienvenue dans l'univers d'OussHabs</h4>
+            <p>Lire n'est pas nécessaire pour le corps, <br> Seul l'oxygène l'est, <br> Mais une bonne histoire oxygène l'esprit !</p>
+            <div class="hero-actions">
+                <a href="histoires.html"><button class="btn">Découvrir les histoires</button></a>
+                <a href="inscription.html"><button class="btn-outline">Rejoindre la communauté</button></a>
+            </div>
+            <div class="images">
+                <img src="image/image1.jpg" alt="image1">
+                <img src="image/image2.jpg" alt="image2">
+                <img src="image/image3.png" alt="image3">
+                <img src="image/image5.jpg" alt="image5">
+                <img src="image/image6.jpg" alt="image6">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">À la une</span>
+                    <h2>Histoires du moment</h2>
+                    <p>Une sélection de récits, entre aventure, mystère et émotion, choisis pour vous embarquer dès la première ligne.</p>
+                </div>
+                <div class="story-grid" data-story-grid data-limit="3"></div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Explorer</span>
+                    <h2>Par catégorie</h2>
+                    <p>Chaque lecteur a son univers. Trouvez le vôtre.</p>
+                </div>
+                <div class="categories">
+                    <a href="histoires.html"><button class="cat-pill">Aventure</button></a>
+                    <a href="histoires.html"><button class="cat-pill">Mystère</button></a>
+                    <a href="histoires.html"><button class="cat-pill">Romance</button></a>
+                    <a href="histoires.html"><button class="cat-pill">Science-Fiction</button></a>
+                    <a href="histoires.html"><button class="cat-pill">Fantastique</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo"><span>C</span>hroniques d'<span>O</span>uss<span>H</span>abs</a>
+                    <p>Une bibliothèque vivante d'histoires courtes, écrites pour être lues d'une traite, entre deux stations de métro ou avant de dormir.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Naviguer</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="histoires.html">Histoires</a></li>
+                        <li><a href="qui-sommes-nous.html">Qui nous sommes ?</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compte</h4>
+                    <ul>
+                        <li><a href="connexion.html">Se connecter</a></li>
+                        <li><a href="inscription.html">S'inscrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 Chroniques d'OussHabs. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <script src="stories.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter — Chroniques d'OussHabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>C</span>hroniques d'<span>O</span>uss<span>H</span>abs</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="qui-sommes-nous.html">Qui nous sommes ?</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="contact.html"><button class="btn">Contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-wrap">
+            <div class="form-card">
+                <span class="eyebrow">Bon retour</span>
+                <h1>Se connecter</h1>
+                <p class="sub">Retrouvez vos histoires et vos favoris.</p>
+
+                <form data-fake-submit="Connexion simulée — aucun compte réel n'est requis pour l'instant.">
+                    <div class="field">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <label class="form-check">
+                        <input type="checkbox"> Se souvenir de moi
+                    </label>
+                    <button type="submit" class="form-submit">Se connecter</button>
+                </form>
+
+                <p class="form-alt">Pas encore de compte ? <a href="inscription.html">S'inscrire</a></p>
+                <p class="form-note">Formulaire de démonstration — aucune donnée n'est enregistrée.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">© 2026 Chroniques d'OussHabs. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
